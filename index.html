@@ -1,142 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>CLA</title>
+    <meta
+      name="keywords"
+      content="Uredjaji, Tehnika, Prodaja, Prodavnica, Prodaja, Elektronika, Kompijuter"
+    />
+    <meta
+      name="description"
+      content="CLA je prodavnica elektornskih uredjaja, prvenstveno onih vezane za računare."
+    />
+    <meta name="author" content="Jovan Antic" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-</head>
-
-<body>
-    <div id="wrapper">
-        <a name="vrh"></a>
-        <header>
-           
-            <div id="logo">
-
-            </div>
-            <nav>
-                <label for="toggle">&#9776;</label>
-                <input type="checkbox" id="toggle" />
-                <ul id="nav">
-                    <li><a href="index.html" class="active menu">Početna</a></li>
-                    <li><a href="Onama.html" class="menu">O nama</a></li>
-                    <li><a href="galerija.html" class="menu">Proizvodi</a></li>
-                    <li><a href="kontakt.html" class="menu">Kontakt</a></li>
-                    <li><a href="ostudentu.html" class="menu">O studentu</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="cover">
-
-            <div class="home-content">
-                <h1>Naslov</h1>
-                <p class="text-1">Tekst 1</p>
-                <p class="text-2">Tekst....2</p>
-            </div>
-
-        </div>
-        <main>
-            <div id="uvod">
-
-                <h2>Podnaslov 2</h2>
-                <p>Mi smo porodica poljoprivrednika. Zajedno obrađujemo zemlju, podržavajući jedno drugo.
-                    Punim srcem Vas pozivamo da nas posetite i probate naše voće.
-                </p>
-
-            </div>
-
-            <div id="cards">
-                <article>
-                    <!-- <div class="title">
-                        <h2>Naslov 1</h2>
-                    </div> -->
-                    <div class="card-container">
-                        <img src="images/poznebreske2 (1).jpg" alt="slika">
-                        <div class="card-center">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nulla corrupti error mollitia
-                            velit, fugiat esse sunt tenetur quibusdam illo! Architecto ullam dolor, eligendi vitae
-                            veniam animi nesciunt iure qui?
-                        </div>
-                        <a href="proizvodi.html#clanak1">Read more>></a>
-                    </div>
-                </article>
-                <article>
-                    <!-- <div class="title">
-                        <h2>Naslov 1</h2>
-                    </div> -->
-                    <div class="card-container">
-                        <img src="images/poznebreske2 (2).jpg" alt="slika">
-                        <div class="card-center">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nulla corrupti error mollitia
-                            velit, fugiat esse sunt tenetur quibusdam illo! Architecto ullam dolor, eligendi vitae
-                            veniam animi nesciunt iure qui?
-                        </div>
-                        <a href="proizvodi.html#clanak2">Read more>></a>
-                    </div>
-                </article>
-                <article>
-                    <!-- <div class="title">
-                        <h2>Naslov 1</h2>
-                    </div> -->
-                    <div class="card-container">
-                        <img src="images/poznebreske3.jpg.jpg" alt="slika">
-                        <div class="card-center">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nulla corrupti error mollitia
-                            velit, fugiat esse sunt tenetur quibusdam illo! Architecto ullam dolor, eligendi vitae
-                            veniam animi nesciunt iure qui?
-                        </div>
-                        <a href="proizvodi.html#clanak3">Read more>></a>
-                    </div>
-                </article>
-            </div>
-        </main>
-
-
-        <footer>
-
-            <div>
-                <p>Copyright &copy; Jovan Antic</p>
-            </div>
-
-            <div id="social">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="zmdi zmdi-facebook-box"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="zmdi zmdi-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="zmdi zmdi-linkedin-box"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="zmdi zmdi-twitter-box"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-        </footer>
-        <div id="sidro"><a href="#vrh">
-                <i class="zmdi zmdi-long-arrow-up"></i></a></div>
-
+    <link rel="icon" href="images/logo.png" type="image/gif" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <!-- body -->
+  <body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
     </div>
-</body>
+    <!-- header -->
+    <header>
+      <!-- header inner -->
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="images/logo.png" alt="#"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+              <nav class="navigation navbar navbar-expand-md navbar-dark">
+                <button class="navbar-toggler" type="button" id="navbarToggle">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarLinks"></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header inner -->
+    <!-- end header -->
+    <!-- banner -->
+    <section
+      class="banner_main d-flex align-items-center"
+      id="coverSlider"
+    ></section>
+    <!-- end banner -->
+    <!-- three_box -->
+    <div class="three_box" id="servicesSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>Usluge</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="services"></div>
+      </div>
+    </div>
+    <!-- three_box -->
+    <!-- products -->
+    <div class="products" id="productSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>Naši proizvod</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="our_products">
+              <div class="row mb-4">
+                <div class="col-6">
+                  <p class="text-start ml-3">
+                    <a href="#" class="mx-2 filter-button" id="filterA"
+                      >Svi proizvodi</a
+                    >
+                    <a href="#" class="mx-2 filter-button" id="filterO"
+                      >Komponente</a
+                    >
+                    <a href="#" class="mx-2 filter-button" id="filterT"
+                      >Periferije</a
+                    >
+                  </p>
+                </div>
+                <div class="col-6">
+                  <p class="text-right mr-3">
+                    <a href="#" class="mx-2" id="sortL">Jeftinije</a>
+                    <a href="#" class="mx-2" id="sortH">Skuplje</a>
+                  </p>
+                </div>
+              </div>
+              <div class="row" id="showProducts"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end products -->
+    <!-- laptop  section -->
+    <div class="laptop">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="titlepage">
+              <p>Izaberite 2 proizvoda sa popustom</p>
+              <h2>Do čak 40%!</h2>
+              <p id="countdown" class="fs-5 mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quibusdam, commodi!
+              </p>
+              <a class="read_more m-0" href="#productSection">Ponuda</a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <img src="images/pc.png" class="img-fluid mt-3" alt="#" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end laptop  section -->
+    <!-- customer -->
+    <div class="customer" id="reviews">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2 class="text-center">Recenzije korisnika</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              id="myCarousel"
+              class="carousel slide customer_Carousel"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  id="indicator1"
+                  class="active"
+                  onclick="testimonials(0)"
+                ></li>
+                <li id="indicator2" onclick="testimonials(1)"></li>
+                <li id="indicator3" onclick="testimonials(2)"></li>
+              </ol>
+              <div class="carousel-inner" id="testimonialsWrap"></div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end customer -->
 
+    <!--  contact -->
+    <div class="contact" id="contactSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>Kontaktirajte nas</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <form id="request" name="contactForm" class="main_form">
+              <div class="row">
+                <div class="col-md-12">
+                  <input
+                    class="contactus"
+                    placeholder="Puno ime"
+                    type="text"
+                    name="fullName"
+                    id="fullName"
+                  />
+                  <p class="text-white danger p-2 bg-danger m-0 d-none"></p>
+                </div>
+                <div class="col-md-12">
+                  <input
+                    class="contactus"
+                    placeholder="Email"
+                    type="email"
+                    id="email"
+                    name="email"
+                  />
+                  <p class="text-white danger p-2 bg-danger m-0 d-none"></p>
+                </div>
+                <div class="col-md-6">
+                  <input
+                    class="contactus"
+                    placeholder="Broj telefona"
+                    type="text"
+                    name="number"
+                    id="number"
+                  />
+                  <p class="text-white danger p-2 bg-danger m-0 d-none"></p>
+                </div>
+                <div class="col-md-6">
+                  <select class="contactus" id="theme" name="theme">
+                    <option value="0" class="text-dark">
+                      Izabrite tip poruke
+                    </option>
+                    <option value="Reklamacija" class="text-dark">
+                      Reklamacija
+                    </option>
+                    <option value="podrska" class="text-dark" name="section">
+                      Tehnicka podrska
+                    </option>
+                    <option value="Pogresan proizvod" class="text-dark">
+                      Pogresan proizvod
+                    </option>
+                  </select>
+                  <p class="text-white danger p-2 bg-danger m-0 d-none"></p>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="text-white mt-3">Izabrite opciju:</h3>
+                  <input
+                    type="checkbox"
+                    name="deal"
+                    id="mouse"
+                    value="Brz odgovor"
+                  />
+                  <span class="me-3 ms-2 text-white">Brz odgovor</span>
+                  <input
+                    type="checkbox"
+                    name="deal"
+                    id="keyboard"
+                    value="Brza dostava"
+                  />
+                  <span class="me-3 ms-2 text-white">Brza dostava</span>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="text-white mt-3">
+                    Gde želite da vas kontaktiramo:
+                  </h3>
+                  <input type="radio" name="contact" id="num" value="num" />
+                  <span class="me-3 ms-2 text-white">Number</span>
+                  <input type="radio" name="contact" id="mail" value="mail" />
+                  <span class="me-3 ms-2 text-white">Email</span>
+                  <p class="text-white danger p-2 bg-danger m-0 d-none"></p>
+                </div>
+                <div class="col-md-12">
+                  <textarea
+                    class="textarea contactus mb-0"
+                    placeholder="Poruka"
+                    name="message"
+                    id="message"
+                  ></textarea>
+                  <p class="text-white">
+                    <span id="charLeft">200</span> karaktera ti je ostalo
+                  </p>
+                  <p class="text-white danger p-2 bg-danger m-0 d-none"></p>
+                </div>
+                <div class="col-md-12">
+                  <button class="send_btn" id="send" name="send" type="button">
+                    Send
+                  </button>
+                </div>
+                <p
+                  id="successForm"
+                  class="bg-success p-2 text-white w-100 mt-3 d-none"
+                ></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+    <!--  footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row" id="footerSocial"></div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>© 2022 CLA Sva prava daržava</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="productModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" id="productContent"></div>
+      </div>
+    </div>
+
+    <!-- end footer -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
